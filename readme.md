@@ -34,15 +34,8 @@ sudo apt install python3-pip python3-venv -y
 ### 3. Clonage du projet
 
 ```sh
-git clone https://github.com/votre-repo/nom-du-projet.git
-cd nom-du-projet
-```
-
-### 4. Création et activation de l'environnement virtuel
-
-```sh
-python3 -m venv venv
-source venv/bin/activate
+git clone https://github.com/loguio/contentModerator.git
+cd contentModerator
 ```
 
 ### 5. Installation des dépendances
