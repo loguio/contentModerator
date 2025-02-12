@@ -20,7 +20,7 @@ def check_filetype(filename):
     """
     file_basename = os.path.basename(filename)
     extension = file_basename.split(".")[-1]
-    if extension in ["jpg", "png", "tiff", "svg"]:
+    if extension in ["jpg", "png", "tiff", "svg","webp"]:
         filetype = "image"
     elif extension in ["mp4", "avi", "mkv"]:
         filetype = "vidéo"
