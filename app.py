@@ -45,6 +45,7 @@ with st.sidebar:
 
 st.title("Content Moderator Pro")
 st.subheader("Modération de contenu avec AWS Rekognition")
+st.subheader("Par Jules Croizier et Marius Bourse")
 st.warning("Veuillez configurer vos credentials AWS dans la barre latérale.")
 uploaded_file = st.file_uploader("Choisissez un fichier (image ou vidéo)", type=["jpg", "jpeg", "png", "mp4"])
  # Vérifier si la variable 'show_transcription' existe dans session_state
