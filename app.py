@@ -71,7 +71,10 @@ if uploaded_file is not None:
         try:
             # Appel de ta fonction process_media
             results = process_media(file_path, rekognition, transcribe, comprehend, bucket_name)
-            
+        except botocore.exceptions.NoCredentialsError as e:
+        # Si l'erreur est due au manque de credentials, on affiche un message spécifique
+            st.error("Erreur AWS : Impossible de localiser les credentials. Veuillez vérifier vos credentials AWS.")
+    
         except botocore.exceptions.ClientError as e:
             # Vérification si l'erreur correspond à un problème de token de sécurité
             if 'UnrecognizedClientException' in str(e):
