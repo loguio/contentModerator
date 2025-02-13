@@ -38,7 +38,7 @@ git clone https://github.com/loguio/contentModerator.git
 cd contentModerator
 ```
 
-### 5. Installation des dépendances
+### 4. Installation des dépendances
 
 ```sh
 pip install -r requirements.txt
@@ -63,5 +63,5 @@ Notre server actuel permet de ne pas avoir besoin de lancer cette commande au la
 Ouvrez un navigateur et accédez à :
 
 ```
-http://54.196.217.137:8501/
+http://54.221.26.80:8501/
 ```
